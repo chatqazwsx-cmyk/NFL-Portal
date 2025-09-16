@@ -1,0 +1,49 @@
+{
+  "season": 2025,
+  "week": 1,
+  "items": [
+    {
+      "conference": "AFC",
+      "category": "Ofensivo",
+      "player": "Josh Allen",
+      "team": "Buffalo Bills",
+      "position": "QB"
+    },
+    {
+      "conference": "NFC",
+      "category": "Ofensivo",
+      "player": "J.J. McCarthy",
+      "team": "Minnesota Vikings",
+      "position": "QB"
+    },
+    {
+      "conference": "AFC",
+      "category": "Defensivo",
+      "player": "Foye Oluokun",
+      "team": "Jacksonville Jaguars",
+      "position": "LB"
+    },
+    {
+      "conference": "NFC",
+      "category": "Defensivo",
+      "player": "Nate Landman",
+      "team": "Los Angeles Rams",
+      "position": "LB"
+    },
+    {
+      "conference": "AFC",
+      "category": "Equipos Especiales",
+      "player": "Chris Boswell",
+      "team": "Pittsburgh Steelers",
+      "position": "K"
+    },
+    {
+      "conference": "NFC",
+      "category": "Equipos Especiales",
+      "player": "Kameron Johnson",
+      "team": "Tampa Bay Buccaneers",
+      "position": "P"
+    }
+  ],
+  "source": "https://www.nfl.com/news/players-of-the-week-2025-week-1-josh-allen-jj-mccarthy"
+}
