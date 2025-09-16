@@ -37,3 +37,28 @@ export function mapScoreboardToCards(json: ESPNScoreboard): GameCard[] {
   }
   return cards;
 }
+// --- util común para pedir JSON con tipado ---
+export async function fetchJSON<T = unknown>(
+  url: string,
+  init?: RequestInit
+): Promise<T> {
+  const res = await fetch(url, {
+    headers: {
+      accept: "application/json",
+      ...(init?.headers as Record<string, string> | undefined),
+    },
+    cache: "no-store",
+    ...init,
+  });
+
+  if (!res.ok) {
+    let body = "";
+    try { body = await res.text(); } catch {}
+    const snippet = body.slice(0, 300);
+    throw new Error(
+      `fetchJSON: ${res.status} ${res.statusText} – ${url}\n` + (snippet ? snippet : "")
+    );
+  }
+
+  return (await res.json()) as T;
+}
